@@ -1,0 +1,19 @@
+:root {
+    --cl-white: #FFF;
+    --cl-red: #F54932;
+    --cl-grey: #D6D6D6;
+    --cl-blue: #3057A2;
+
+    --font-main: GolosText, sans-serif;;
+    --font-second: Merriweather, sans-serif;;
+
+    --cl-button: #1F1F1F;
+    --cl-button-hover: #FBCE51;
+
+    --cl-text: #313131;
+    --cl-link: var(--cl-blue);
+
+    --bg-main: #E9DED4;
+
+    --transition: ;
+}

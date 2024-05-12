@@ -1,0 +1,155 @@
+.participants__body {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    overflow: hidden;
+
+    @media (min-width: 1366px) {
+        & {
+            padding-top: 202px;
+            padding-bottom: 140px;
+        }
+    }
+}
+
+.participants__slider {
+    margin-top: 40px;
+
+    @media (min-width: 1366px) {
+        & {
+            margin-top: 56px;
+        }
+    }
+}
+
+.participants-slider {
+    position: relative;
+}
+
+.participants-slider__slideshow {
+    position: relative;
+    display: flex;
+    gap: 32px;
+    transition: transform 0.25s;
+
+    @media (min-width: 1366px) {
+        & {
+            gap: 20px;
+        }
+    }
+}
+
+.participants-slider__slide {
+    cursor: grab;
+}
+
+.participants-slider__controls {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+    @media (min-width: 1366px) {
+        & {
+            position: absolute;
+            top: -114px;
+            right: 0;
+            margin-top: 0;
+        }
+    }
+}
+
+.participants-slider__controls-count {
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+    font-size: 16px;
+
+    span {
+        opacity: .6;
+    }
+}
+
+.participants-card {
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 335px;
+    text-align: center;
+
+    @media (min-width: 1366px) {
+        & {
+            padding-left: 37px;
+            padding-right: 37px;
+            width: 394px;
+        }
+    }
+}
+
+.participants-card__avatar {
+    position: relative;
+    display: inline-block;
+    width: 244px;
+    height: 244px;
+    background-color: #424241;
+    background-image: url(../../assets/img/imp-steps__slide-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    overflow: hidden;
+    line-height: 1;
+    vertical-align: middle;
+
+    @media (min-width: 1366px) {
+        & {
+            width: 320px;
+            height: 320px;
+        }
+    }
+
+    img {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+
+        @media (min-width: 1366px) {
+            & {
+                width: 293px;
+                height: 299px;
+            }
+        }
+    }
+}
+
+.webp .participants-card__avatar {
+
+    @media (max-width: 1365px) {
+        & {
+            background-image: url(../../assets/img/participants-card__avatar-bg.webp);
+        }
+    }
+}
+
+.participants-card__name {
+    margin-top: 28px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.participants-card__title {
+    margin-top: 8px;
+    font-size: 20px;
+    opacity: .6;
+
+    @media (min-width: 1366px) {
+        & {
+            margin-top: 6px;
+        }
+    }
+}
+
+.participants-card__button {
+    margin-top: 20px;
+}

@@ -1,0 +1,164 @@
+.more-chess {
+    overflow: hidden;
+}
+
+.more-chess__body {
+    
+    @media (min-width: 1366px) {
+        & {
+            display: grid;
+            grid-template-columns: auto 704px;
+            padding-top: 91px;
+        }
+    }
+}
+
+.more-chess__img-wrap {
+    position: relative;
+    width: 335px;
+    height: 402px;
+
+    @media (min-width: 1366px) {
+        & {
+            width: initial;
+            height: initial;
+        }
+    }
+}
+
+.more-chess__spec-img {
+    position: absolute;
+    top: calc(50% + 35px);
+    left: calc(50% - 1px);
+    transform: translate(-50%, -50%);
+
+    @media (min-width: 1366px) {
+        & {
+            top: calc(50% - 6px);
+            left: calc(50% - 22px);
+        }
+
+        img {
+            width: 530px;
+            height: 568px;
+        }
+    }
+}
+
+.more-chess__img-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/img/more-chess__mask.png);
+    background-repeat: repeat;
+    mix-blend-mode: color-burn;
+    z-index: 2;
+
+    @media (min-width: 1366px) {
+        & {
+            top: -34px;
+            left: -30px;
+        }
+
+        img {
+            width: 530px;
+            height: 568px;
+        }
+    }
+}
+
+.webp .more-chess__img-mask {
+    background-image: url(../../assets/img/more-chess__mask.webp);
+}
+
+.more-chess__content {
+    margin-top: 58px;
+
+    @media (min-width: 1366px) {
+        & {
+            margin-top: 0;
+        }
+    }
+}
+
+.more-chess-table {
+    display: block;
+    margin-top: 44px;
+    font-size: 20px;
+    text-align: left;
+    white-space: nowrap;
+
+    @media (min-width: 1366px) {
+        & {
+            margin-top: 60px;
+        }
+    }
+
+    tbody {
+        display: grid;
+        gap: 16px;
+    }
+
+    tr {
+        display: grid;
+        gap: 12px;
+        padding-bottom: 14px; /* Хз откуда 2 пикселя прибегают, кто узнает сообщите... */
+        border-bottom: 2px solid #D0D0D0;
+
+        @media (min-width: 1366px) {
+            & {
+                gap: 16px;
+                grid-template-columns: 306px 398px;
+            }
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        @media (max-width: 1365px) {
+            &:nth-child(4) {
+                display: flex;
+            }
+        }
+    }
+
+    th {
+        font-weight: 400;
+
+        @media (min-width: 1366px) {
+            & {
+                border-right: 2px solid #D0D0D0;
+            }
+        }
+
+        span {
+            opacity: .7;
+        }
+
+    }
+
+    td {
+        font-weight: 600;
+    }
+}
+
+.more-chess-table__old-price {
+    text-decoration-color: var(--cl-red);
+}
+
+.more-chess__call {
+    margin-top: 41px;
+    color: var(--cl-blue);
+
+    @media (min-width: 1366px) {
+        & {
+            margin-top: 48px;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.heading {
+    font-family: var(--font-second);
+    font-weight: 400;
+    line-height: 1.1;
+    text-transform: uppercase;
+
+    &.heading_lvl1 {
+        font-size: 36px;
+
+        @media (min-width: 1366px) {
+            & {
+                font-size: 60px;
+            }
+        }
+    }
+
+    &.heading_lvl2 {
+        font-size: 36px;
+        line-height: 1.11;
+
+        @media (min-width: 1366px) {
+            & {
+                font-size: 54px;
+                line-height: 1.2;
+            }
+        }
+    }
+
+    &.heading_lvl3 {
+        font-size: 28px;
+        line-height: 1.35;
+
+        @media (min-width: 1366px) {
+            & {
+                font-size: 36px;
+            }
+        }
+    }
+
+    b {
+        font-weight: 700;
+        letter-spacing: 0.4px;
+
+        @media (min-width: 1366px) {
+            & {
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+}

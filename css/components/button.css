@@ -1,0 +1,116 @@
+.button {
+    display: inline-block;
+    color: var(--cl-button);
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 2px solid var(--cl-button);
+    border-radius: 66px;
+    cursor: pointer;
+    transition: all .25s linear;
+    outline: none;
+    user-select: none;
+
+    &:hover,
+    &:focus {
+        color: var(--cl-white);
+        background-color: var(--cl-button);
+    }
+
+    &.button_disabled,
+    &:disabled {
+        color: var(--cl-white) !important;
+        background-color: var(--cl-grey) !important;
+        border-color: var(--cl-grey) !important;
+        cursor: not-allowed !important;
+    }
+
+    &.button_secondary {
+        color: var(--cl-white);
+        background-color: var(--cl-button);
+    }
+
+    &.button_secondary:hover,
+    &.button_secondary:focus {
+        color: var(--cl-button);
+        background-color: var(--cl-button-hover);
+        border-color: var(--cl-button-hover);
+    }
+
+    &.button_link {
+        color: var(--cl-link);
+        border-color:  var(--cl-link);
+
+        .button__text {
+            padding: 8px 10px;
+        
+            @media (min-width: 1366px) {
+                & {
+                    padding-top: 6px;
+                    padding-bottom: 6px;
+                }
+            }    
+        }
+    }
+
+    &.button_link:hover,
+    &.button_link:focus {
+        color: var(--cl-white);
+        background-color: var(--cl-link);
+    }
+
+    &.button_arrow{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        
+        @media (min-width: 1366px) {
+            & {
+                width: 44px;
+                height: 44px;
+            }
+        }
+
+        img {
+            margin-right: 4px;
+
+            @media (min-width: 1366px) {
+                & {
+                    width: 12px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+    &.button_arrow_reverse {
+        transform: rotateY(180deg);        
+    }
+
+    &.button_m-white {
+
+        @media (max-width: 1366px) {
+            & {
+                background-color: var(--cl-white);
+                border-color: var(--cl-white);
+            }
+        }      
+    }
+}
+
+.button__text {
+    display: inline-block;
+    padding: 14px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+
+    @media (min-width: 1366px) {
+        & {
+            padding: 13px 49px;
+            line-height: 1.3;
+        }
+    }
+}

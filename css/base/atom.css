@@ -1,0 +1,33 @@
+.tac {
+    text-align: center;
+}
+
+.tar {
+    text-align: right;
+}
+
+.link-clear {
+    color: inherit;
+    text-decoration: none;
+}
+
+.cl-red {
+    color: var(--cl-red);
+}
+
+.hide-mobile {
+    
+    @media (max-width: 1365px) {
+        & {
+            display: none !important;
+        }
+    }
+}
+.mobile-only {
+    
+    @media (min-width: 1366px) {
+        & {
+            display: none !important;
+        }
+    }
+}

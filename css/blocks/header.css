@@ -1,0 +1,49 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header__body {
+    padding-top: 18px;
+
+    @media (min-width: 1366px) {
+        & {
+            padding-top: 26px;
+        }
+    }
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo_img {
+    
+    @media (min-width: 1366px) {
+        & {
+            width: 92px;
+            height: 32px;
+        }
+    }
+}
+
+.header-logo__text {
+    margin-left: 5px;
+    color: #595653;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+
+    @media (min-width: 1366px) {
+        & {
+            margin-left: 7px;
+            font-size: 16px;
+        }
+    }
+}

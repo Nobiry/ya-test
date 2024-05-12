@@ -1,0 +1,42 @@
+.support-chess__body {
+    position: relative;
+    padding-top: 48px;
+
+    @media (min-width: 1366px) {
+        & {
+            padding-top: 109px;
+        }
+    }
+}
+
+.support-chess__heading {
+
+    @media (min-width: 1366px) {
+        & {
+            width: 764px;
+        }
+    }
+}
+
+.support-chess__spec-img{
+
+    @media (max-width: 1365px) {
+        display: inline-block;
+        margin-top: 24px;
+        margin-bottom: 17px;
+    }
+
+    @media (min-width: 1366px) {
+        &{
+            position: absolute;
+            top: calc(50% + 59px);
+            right: 0;
+            transform: translateY(-50%);
+        }
+
+        & img {
+            width: 394px;
+            height: 250px;
+        }
+    }
+}

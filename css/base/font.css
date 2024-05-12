@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "GolosText";
+    src: url(./../../assets/font/GolosText-VariableFont_wght.ttf) format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url(./../../assets/font/Merriweather-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-display: swap;
+}

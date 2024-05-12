@@ -1,0 +1,159 @@
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.anim_spin {
+    animation: 30s infinite linear spin;
+}
+
+@keyframes opop {
+    0% {
+        transform: rotate(0deg) translateX(0px);
+    }
+
+    25% {
+        transform: rotate(20deg) translateX(20px);
+    }
+
+    50% {
+        transform: rotate(0deg) translateX(10px);
+    }
+
+    75% {
+        transform: rotate(-20deg) translateX(0px);
+    }
+
+    100% {
+        transform: rotate(0deg) translateX(-20px);
+    }
+}
+
+.anim_opop {
+    animation-name: opop;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    transform-origin: 100% 50%;
+}
+
+.anim_opop-reverse {
+    animation-direction: alternate-reverse;
+}
+
+@keyframes knight {
+    0% {
+        transform: rotate(0deg) translate(0px, 0px) scale(1);
+    }
+
+    50% {
+        transform: rotate(20deg) translate(-100px, 0px) scale(.8);
+    }
+
+    100% {
+        transform: rotate(10deg) translate(-90px, 25px) scale(.5);
+    }
+}
+
+@keyframes knight-desktop {
+    0% {
+        transform: rotate(0deg) translate(0px, 0px) scale(1);
+    }
+
+    50% {
+        transform: rotate(20deg) translate(-100px, 0px) scale(.8);
+    }
+
+    100% {
+        transform: rotate(10deg) translate(-150px, 20px) scale(.5);
+    }
+}
+
+.anim_knight {
+    animation-name: knight;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    transform-origin: 100% 50%;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+    @media (min-width: 1366px) {
+        & {
+            animation-name: knight-desktop;
+        }
+    }
+}
+
+@keyframes pawn {
+    0% {
+        transform: rotate(0deg) translate(0px, 0px) scale(1);
+    }
+
+    50% {
+        transform: rotate(20deg) translate(0px, -50px) scale(.9);
+    }
+
+    100% {
+        transform: rotate(0deg) translate(-60px, -20px) scale(.8);
+    }
+}
+
+.anim_pawn {
+    animation-name: pawn;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    transform-origin: 100% 50%;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translate(0, 0);
+    }
+    
+    100% {
+        transform: translateX(calc(-100% - 100px));
+    }
+}
+
+.anim_ticker {
+    animation: ticker 15s infinite linear;
+}
+
+@keyframes fly-in {
+    0% {
+        transform: translate(300px, -100px);
+    }
+    
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.anim_fly-in {
+    animation: fly-in 3s linear;
+}
+
+@keyframes fly {
+    0% {
+        transform: rotate(0);
+    }
+    
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+.anim_fly {
+    animation: fly 1s infinite linear alternate;
+}

@@ -1,0 +1,80 @@
+.bender-ticker {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 38px;
+    max-width: 1920px;
+    background-color: var(--cl-red);
+    overflow: hidden;
+
+    @media (min-width: 1366px) {
+        & {
+            height: 60px;
+        }
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 10%;
+        height: 100%;
+        z-index: 2;
+    }
+
+    &::before {
+        left: 0;
+        background: linear-gradient(
+            90deg,
+            rgba(245, 73, 50, 1) 0%,
+            rgba(245, 73, 50, 0) 100%
+        );
+    }
+
+    &::after {
+        right: 0;
+        background: linear-gradient(
+            90deg,
+            rgba(245, 73, 50, 0) 0%,
+            rgba(245, 73, 50, 1) 100%
+        );
+    }
+}
+
+.bender-ticker__wrap {
+    display: flex;
+    gap: 30px;
+    padding-left: 100%;
+    user-select: none;
+}
+
+.bender-ticker__text {
+    position: relative;
+    font-family: var(--font-second);
+    font-size: 16px;
+    line-height: 1.1;
+    color: var(--cl-white);
+    white-space: nowrap;
+    text-transform: uppercase;
+
+    @media (min-width: 1366px) {
+        & {
+            font-size: 22px;
+        }
+    }
+
+    &:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -21px;
+        width: 6px;
+        height: 6px;
+        background-color: currentColor;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
