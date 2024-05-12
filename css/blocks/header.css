@@ -4,6 +4,7 @@
     left: 0;
     right: 0;
     z-index: 10;
+    overflow: hidden;
 }
 
 .header__body {
